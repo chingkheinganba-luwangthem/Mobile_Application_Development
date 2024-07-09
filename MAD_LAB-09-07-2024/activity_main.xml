@@ -1,0 +1,56 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="LoginForm.WebForm1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body >
+    <form id="form1" runat="server">
+        <div>
+            
+            <asp:Label ID="Label1" runat="server" Text="Name: "></asp:Label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            <br />
+            <asp:Label ID="Label2" runat="server" Text="Address:  "></asp:Label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox><br />
+            <asp:Label ID="Label3" runat="server" Text="Phone_Number:  "></asp:Label>
+            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox><br />
+            <asp:Label ID="Label7" runat="server" Text="Email:  "></asp:Label>
+            <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox><br />
+            <asp:Label ID="Label4" runat="server" Text="Gender:  "></asp:Label>
+            <asp:RadioButton ID="Radiobutton1" runat="server"  Text ="Male" GroupName="mygroup"/> <asp:RadioButton ID="Radiobutton2" runat="server" Text="Female" GroupName="mygroup"/><br />
+            <asp:Label ID="Label5" runat="server" Text="DOB: "  ></asp:Label>
+            <asp:TextBox ID="TextBox4" runat="server" select=" " OnTextChanged="TextBox4_TextChanged"></asp:TextBox>
+            <asp:Calendar ID="Calendar1" runat="server" OnSelectionChanged="Calendar1_SelectionChanged"></asp:Calendar><br />
+           <div>
+                    <asp:Label ID="Label8" runat="server" Text="City:"></asp:Label>
+                    <asp:DropDownList ID="DropDown1" runat="server"> 
+                    <asp:ListItem ID ="ListItem1" runat="server" Text="Vadodara"></asp:ListItem>
+                    <asp:ListItem ID ="ListItem2" runat="server" Text="Surat"></asp:ListItem>
+                    <asp:ListItem ID ="ListItem3" runat="server" Text="Ahmedabad"></asp:ListItem>
+                    
+                    </asp:DropDownList>
+           </div>
+       
+            
+            <asp:Label ID="Label9" runat="server" Text="Pin_Code"></asp:Label>
+            <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox><br />
+            <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+            <asp:Label ID="Label6" runat="server" Text="Category: "></asp:Label>
+            <asp:CheckBox ID="Checkbox1" runat="server"  Text="General"/> <asp:CheckBox ID="Checkbox2" runat="server" Text="OBC"/> <asp:CheckBox ID="Checkbox3" runat="server" Text="SC" /><br />
+            <asp:Label ID="Label10" runat="server" Text="Hobbies"></asp:Label><br />
+            <asp:CheckBox ID="CheckBox4" runat="server" Text="Reading"/><br />
+            <asp:CheckBox ID="CheckBox5" runat="server" Text="Playing" /><br />
+            <asp:CheckBox ID="CheckBox6" runat="server" Text="Singing" /><br />
+            
+            <asp:Button ID="Button1" runat="server" Text="Register" />
+        </div>
+    </form>
+</body>
+</html>
